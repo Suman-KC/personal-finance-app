@@ -162,11 +162,13 @@ li { margin: 5px 0; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 14px;
+  height: 400px;
+
 }
 .chart-card {
-  height: 320px;
-  padding: 10px;
-  border: 1px solid #eee;
+  height: 300px;
+  padding: 5px;
+  border: 1px solid #61a931;
   border-radius: 8px;
   background: #fafafa;
 }
