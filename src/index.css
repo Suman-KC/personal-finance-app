@@ -184,3 +184,27 @@ li { margin: 5px 0; }
   .chart-wrap { grid-template-columns: 1fr; }
   .edit-row { grid-template-columns: 110px 1fr 1fr 1fr 130px auto; }
 }
+/* Make chart canvases fill their card containers */
+.chart-card canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Adaptive height using clamp: min 240px, preferred 45vh, max 360px */
+.chart-card {
+  height: clamp(240px, 45vh, 360px);
+}
+
+/* On very small screens, stack charts and reduce height a bit */
+@media (max-width: 800px) {
+  .chart-wrap { grid-template-columns: 1fr; }
+  .chart-card { height: clamp(220px, 40vh, 320px); }
+}
+
+/* Extra-narrow phones */
+@media (max-width: 420px) {
+  .chart-card { height: clamp(200px, 38vh, 300px); }
+  .pie-header h3 { font-size: 16px; }
+  .month-picker label { font-size: 12px; }
+  .month-picker select { font-size: 14px; }
+}
