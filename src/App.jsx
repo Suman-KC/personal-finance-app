@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import ProfileForm from "./Components/ProfileForm";
-import TransactionForm from "./components/TransactionForm";
-import TransactionList from "./components/TransactionList";
-import Charts from "./components/Charts";
+import TransactionForm from "./Components/TransactionForm";
+import TransactionList from "./Components/TransactionList";
+import Charts from "./Components/Charts";
 
 export default function App() {
   const [profile, setProfile] = useState(() =>
